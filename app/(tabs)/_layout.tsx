@@ -24,10 +24,73 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="contacts"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Contactos',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.2.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="anadir_contacto"
+        options={{
+          href: null,
+          title: 'Anadir contacto',
+        }}
+      />
+      <Tabs.Screen
+        name="devices"
+        options={{
+          title: 'Dispositivos',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="ipad.and.iphone" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="notifications"
+        options={{
+          title: 'Notificaciones',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="bell.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="temperatura"
+        options={{
+          href: null,
+          title: 'Temperatura',
+        }}
+      />
+      <Tabs.Screen
+        name="pulso"
+        options={{
+          href: null,
+          title: 'Pulso',
+        }}
+      />
+      <Tabs.Screen
+        name="presion"
+        options={{
+          href: null,
+          title: 'Presion',
+        }}
+      />
+      <Tabs.Screen
+        name="oxigeno"
+        options={{
+          href: null,
+          title: 'Oxigeno',
+        }}
+      />
+      <Tabs.Screen
+        name="sueno"
+        options={{
+          href: null,
+          title: 'Sueno',
+        }}
+      />
+      <Tabs.Screen
+        name="menu"
+        options={{
+          title: 'Menu',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="line.3.horizontal" color={color} />,
         }}
       />
     </Tabs>

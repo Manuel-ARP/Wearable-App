@@ -18,6 +18,10 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'person.2.fill': 'group',
+  'ipad.and.iphone': 'devices-other',
+  'bell.fill': 'notifications',
+  'line.3.horizontal': 'menu',
 } as IconMapping;
 
 /**
