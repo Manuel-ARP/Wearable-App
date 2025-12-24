@@ -28,7 +28,7 @@ const dataSets = {
     labels: dayLabels,
     spo2: '95%',
     bpm: '76 BPM',
-    date: 'Viernes, 21 Nov.',
+    date: 'Viernes, 17 oct.',
   },
   semana: {
     label: 'Oxigeno (SpO2)',
@@ -44,7 +44,7 @@ const dataSets = {
     labels: ['1', '4', '7', '10', '13', '16', '19', '22', '25', '28'],
     spo2: '97%',
     bpm: '74 BPM',
-    date: 'Noviembre',
+    date: 'Octubre',
   },
 } as const;
 
@@ -71,7 +71,7 @@ export default function OxigenoScreen() {
     [current],
   );
 
-  const chartWidth = Math.max(width - 40, current.labels.length * 50);
+  const chartWidth = Math.max(width - 40, current.labels.length * 70);
 
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -109,9 +109,11 @@ export default function OxigenoScreen() {
               width={chartWidth}
               height={220}
               withDots
-              withShadow
+              withShadow={false}
               withInnerLines
               withOuterLines={false}
+              fromZero
+              yAxisSuffix="%"
               chartConfig={{
                 backgroundColor: palette.card,
                 backgroundGradientFrom: palette.card,
